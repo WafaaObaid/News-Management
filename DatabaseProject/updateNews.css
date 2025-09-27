@@ -1,0 +1,101 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4a00e0, #8e2de2, #1cb5e0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container {
+    text-align: center;
+    color: #fff;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+form {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 30px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 1s ease;
+}
+
+form input[type="text"],
+form textarea,
+form select,
+form input[type="file"] {
+    width: 100%;
+    margin: 12px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+form select option {
+    color: #333;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(135deg, #1cb5e0, #8e2de2);
+    color: #fff;
+    transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  margin-top: auto;
+}

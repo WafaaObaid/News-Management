@@ -1,0 +1,101 @@
+body {
+  background-color: #6a769e;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#title {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 4em;
+  color: #f8f8f8;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); 
+  letter-spacing: 2px; 
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.form-container {
+  background-color: rgba(30, 40, 50, 0.85); 
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  width: 350px; 
+  color: #f8f8f8; 
+}
+
+.form-container h2 {
+  color: #f8f8f8;
+  margin-bottom: 25px;
+  font-size: 2em;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.95); 
+  color: #333;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #556080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="submit"]:hover {
+  background-color: #6a769e;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  margin-top: auto;
+}
+.create-account {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.create-account p {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.create-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #1cb5e0, #9f7bbf);
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.create-btn:hover {
+    background: linear-gradient(135deg, #8966a8, #1cb5e0);
+    transform: translateY(-2px);
+}
