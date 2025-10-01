@@ -51,8 +51,7 @@ if (isset($_GET['id'])) {
         <input type="submit" value="Update" name="update">
     </form>
     </div>
-    <footer>
-    <p>&copy; 2025 News Management. All rights reserved.</p>
-</footer>
+    
 </body>
 </html>
+
