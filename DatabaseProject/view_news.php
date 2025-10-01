@@ -4,7 +4,15 @@
 session_start();
 
 include "connectionToDatabase.php";
- $sql = "SELECT * FROM news WHERE deleted = 0";
+
+ $sql = "SELECT news.id, news.title, news.content, news.image, news.deleted,
+               category.category_name,
+               users.name
+        FROM news
+        JOIN users ON news.user_id = users.id
+        JOIN category ON news.category_name = category.category_name
+        WHERE news.deleted = 0";
+
 $result = $connection->query($sql);
 
 echo $result->num_rows;
@@ -48,7 +56,7 @@ echo $result->num_rows;
                         echo "No image";
                     } ?>
                 </td>
-                <td><?php echo $row["user_id"]; ?></td>
+                <td><?php echo $row["name"]; ?></td>
 
                 <td>
                    <a href="deletedNews.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete it?');">Delete</a>
